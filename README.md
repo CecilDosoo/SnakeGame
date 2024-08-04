@@ -3,6 +3,8 @@
 - Developed a Python program inspired by the classic mobile Snake game. The game functions similarly to the original Snake game, providing an authentic gameplay experience.
   
 - Utilized object-oriented programming (OOP), along with the Turtle graphics and Time modules.
+- 
+![image](https://github.com/user-attachments/assets/3db9a863-d9d5-4090-a5bd-827e0cd83a34)
 
 
 # SCOREBOARD CLASS
