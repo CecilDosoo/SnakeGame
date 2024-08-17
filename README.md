@@ -1,36 +1,45 @@
-# SnakeGame
+# Snake Game
 
-- Developed a Python program inspired by the classic mobile Snake game. The game functions similarly to the original Snake game, providing an authentic gameplay experience.
+This project is a Python program inspired by the classic Snake game. It uses object-oriented programming (OOP) principles along with the Turtle graphics and Time modules to create an engaging and authentic gameplay experience.
+
+![Game Screenshot](https://github.com/user-attachments/assets/3db9a863-d9d5-4090-a5bd-827e0cd83a34)
+
+## Components
+
+### Scoreboard Class
+
+The `Scoreboard` class manages and displays the score at the top of the screen.
+
+- **`update_score()`**: Deletes the current score and updates it by incrementing the score by 1 whenever the snake eats food.
   
-- Utilized object-oriented programming (OOP), along with the Turtle graphics and Time modules.
-- 
-![image](https://github.com/user-attachments/assets/3db9a863-d9d5-4090-a5bd-827e0cd83a34)
-
-
-# SCOREBOARD CLASS
-- The scoreboard class is used to right and update the score at the top of the screen. This also uses the turtle module
+- **`reset()`**: Opens the `highscore.txt` file to compare and update the high score if the current score is higher. This feature allows users to track high scores across multiple game sessions.
   
-- The update_score function within the Scoreboard class deletes the current score and updates it by incrementing the score by 1 whenever the turtle eats the food.
+- **`increase_score()`**: Increases the score by one each time the snake consumes food.
+
+### Snake Class
+
+The `Snake` class creates and manages the snake’s behavior.
+
+- **`create_snake()`**: Initializes the snake with three segments positioned along the x-axis at predefined locations.
   
-- I have implemented a reset function that opens the highscore.txt file and compares the stored high score with the current score. If the current score is higher, it updates the file with the new high score. This allows users to track their high scores across multiple gameplays, rather than resetting each time the program runs.
+- **`add_segment()`**: Creates a new turtle segment and adds it to the list of segments, representing the snake’s body.
   
-- I have the increase_score which increases the score by one each time the snake eats a food
+- **`reset()`**: Moves the existing segments off-screen and recreates the snake from scratch if it collides with a wall or its own tail.
+  
+- **`extend()`**: Adds a new segment to the end of the snake when it eats food.
+  
+- **`move()`**: Updates the position of each segment to follow the segment in front, with the head moving in the specified direction.
+  
+- **`up()`, `down()`, `left()`, `right()`**: Adjust the direction of the snake’s head based on user input, ensuring the snake cannot reverse direction.
 
-# SNAKE CLASS
-- The Snake class creates and manages the snake's behavior in the game. It initializes the snake with three segments, controls movement, and handles growth when the snake eats food. The class includes methods to reset the snake, extend its length, and change its direction while ensuring it does not reverse.
+### Food Class
 
-- The create_snake function initializes the starting snake, consisting of three turtle blocks positioned along the x-axis at predetermined locations. It uses these positions and passes them to the add_segment function, where each turtle segment is created
+The `Food` class handles the creation and placement of food objects.
 
-- The add_segment function is responsible for creating each turtle segment of the snake. Once a turtle is created, it is added to the list called segments, which contains all the turtle segments of the snake.
+- **`create_food()`**: Generates a food item at a random location on the screen.
+  
+- **`move_food()`**: Changes the food’s position randomly each time it is eaten by the snake.
 
-- The reset function is used to return the snake to its initial starting position if it collides with a wall or its own tail. It does this by moving the existing segments off-screen and then recreating the snake from scratch.
+## How to Run
 
-- The extend function is simply used to add another turtle to the back of the snake once the snake eats the food
-
-- The move function controls the snake's movement. When the game starts or the user directs the snake, the function updates each segment’s position to match the segment directly in front of it, except for the head. The head moves in the specified direction (up, down, left, or right), while the other segments follow the previous segment’s position, creating the illusion of continuous movement.
-
-- The up, down, left, and right functions adjust the direction of the snake's head based on the angle values. They change the heading of the head to the respective direction while ensuring that the snake cannot reverse direction.
-
-
-# FOOD CLASS
-- The Food class is used to create the food object and change its position randomly each time it is eaten. It is implemented using the Turtle module.
+To play the game, ensure you have Python installed on your system. Execute the main Python script to start the game.
