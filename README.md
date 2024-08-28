@@ -4,6 +4,10 @@ This project is a Python program inspired by the classic Snake game. It uses obj
 
 ![Game Screenshot](https://github.com/user-attachments/assets/3db9a863-d9d5-4090-a5bd-827e0cd83a34)
 
+
+https://github.com/user-attachments/assets/4c4b7938-bdc4-4033-9aee-cb192cc4b95a
+
+
 ## Components
 
 ### Scoreboard Class
