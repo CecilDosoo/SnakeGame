@@ -2,9 +2,6 @@
 
 This project is a Python program inspired by the classic Snake game. It uses object-oriented programming (OOP) principles along with the Turtle graphics and Time modules to create an engaging and authentic gameplay experience.
 
-![Game Screenshot](https://github.com/user-attachments/assets/3db9a863-d9d5-4090-a5bd-827e0cd83a34)
-
-
 https://github.com/user-attachments/assets/4c4b7938-bdc4-4033-9aee-cb192cc4b95a
 
 
